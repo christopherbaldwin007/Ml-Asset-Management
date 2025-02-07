@@ -1,0 +1,430 @@
+import numpy as np
+
+class InvestmentQuality:
+    def __init__(self, factors):
+        self.factors = factors
+
+    def factor_1(self):
+        # Example: Price-to-Earnings Ratio
+        return self.factors.get('pe_ratio', 0) < 15
+
+    def factor_2(self):
+        # Example: Debt-to-Equity Ratio
+        return self.factors.get('de_ratio', 0) < 1
+
+    def factor_3(self):
+        # Example: Return on Equity
+        return self.factors.get('roe', 0) > 15
+
+    def factor_4(self):
+        # Example: Current Ratio
+        return self.factors.get('current_ratio', 0) > 2
+
+    def factor_5(self):
+        # Example: Dividend Yield
+        return self.factors.get('dividend_yield', 0) > 2
+
+    def factor_6(self):
+        # Example: Earnings Growth Rate
+        return self.factors.get('earnings_growth', 0) > 10
+
+    def factor_7(self):
+        # Example: Price-to-Book Ratio
+        return self.factors.get('pb_ratio', 0) < 3
+
+    def factor_8(self):
+        # Example: Free Cash Flow
+        return self.factors.get('free_cash_flow', 0) > 0
+
+    def factor_9(self):
+        # Example: Operating Margin
+        return self.factors.get('operating_margin', 0) > 10
+
+    def factor_10(self):
+        # Example: Net Profit Margin
+        return self.factors.get('net_profit_margin', 0) > 5
+
+    def factor_11(self):
+        # Example: Revenue Growth Rate
+        return self.factors.get('revenue_growth', 0) > 10
+
+    def factor_12(self):
+        # Example: Market Capitalization
+        return self.factors.get('market_cap', 0) > 1e9
+
+    def factor_13(self):
+        # Example: Beta
+        return self.factors.get('beta', 0) < 1
+
+    def factor_14(self):
+        # Example: Interest Coverage Ratio
+        return self.factors.get('interest_coverage', 0) > 3
+
+    def factor_15(self):
+        # Example: Quick Ratio
+        return self.factors.get('quick_ratio', 0) > 1
+
+    def factor_16(self):
+        # Example: Gross Margin
+        return self.factors.get('gross_margin', 0) > 40
+
+    def factor_17(self):
+        # Example: Asset Turnover Ratio
+        return self.factors.get('asset_turnover', 0) > 1
+
+    def factor_18(self):
+        # Example: Inventory Turnover Ratio
+        return self.factors.get('inventory_turnover', 0) > 5
+
+    def factor_19(self):
+        # Example: Cash Flow to Debt Ratio
+        return self.factors.get('cash_flow_to_debt', 0) > 0.5
+
+    def factor_20(self):
+        # Example: Earnings Per Share (EPS)
+        return self.factors.get('eps', 0) > 0
+
+    def factor_21(self):
+        # Example: PEG Ratio
+        return self.factors.get('peg_ratio', 0) < 1.5
+
+    def factor_22(self):
+        # Example: Dividend Payout Ratio
+        return self.factors.get('dividend_payout_ratio', 0) < 60
+
+    def factor_23(self):
+        # Example: Price-to-Sales Ratio
+        return self.factors.get('ps_ratio', 0) < 2
+
+    def factor_24(self):
+        # Example: Return on Assets (ROA)
+        return self.factors.get('roa', 0) > 5
+
+    def factor_25(self):
+        # Example: Return on Investment (ROI)
+        return self.factors.get('roi', 0) > 10
+
+    def factor_26(self):
+        # Example: Capital Expenditure
+        return self.factors.get('capex', 0) < 20
+
+    def factor_27(self):
+        # Example: Book Value Per Share
+        return self.factors.get('bvps', 0) > 0
+
+    def factor_28(self):
+        # Example: Price-to-Cash Flow Ratio
+        return self.factors.get('pcf_ratio', 0) < 15
+
+    def factor_29(self):
+        # Example: Dividend Growth Rate
+        return self.factors.get('dividend_growth', 0) > 5
+
+    def factor_30(self):
+        # Example: Operating Cash Flow
+        return self.factors.get('operating_cash_flow', 0) > 0
+
+    def factor_31(self):
+        # Example: Net Income
+        return self.factors.get('net_income', 0) > 0
+
+    def factor_32(self):
+        # Example: Revenue
+        return self.factors.get('revenue', 0) > 1e9
+
+    def factor_33(self):
+        # Example: Gross Profit
+        return self.factors.get('gross_profit', 0) > 1e8
+
+    def factor_34(self):
+        # Example: Total Assets
+        return self.factors.get('total_assets', 0) > 1e9
+
+    def factor_35(self):
+        # Example: Total Liabilities
+        return self.factors.get('total_liabilities', 0) < 1e9
+
+    def factor_36(self):
+        # Example: Equity
+        return self.factors.get('equity', 0) > 1e8
+
+    def factor_37(self):
+        # Example: Cash and Cash Equivalents
+        return self.factors.get('cash_equivalents', 0) > 1e7
+
+    def factor_38(self):
+        # Example: Total Debt
+        return self.factors.get('total_debt', 0) < 1e9
+
+    def factor_39(self):
+        # Example: EBITDA
+        return self.factors.get('ebitda', 0) > 1e8
+
+    def factor_40(self):
+        # Example: EBIT
+        return self.factors.get('ebit', 0) > 1e7
+
+    def factor_41(self):
+        # Example: Net Working Capital
+        return self.factors.get('net_working_capital', 0) > 0
+
+    def factor_42(self):
+        # Example: Free Cash Flow Yield
+        return self.factors.get('fcf_yield', 0) > 5
+
+    def factor_43(self):
+        # Example: Debt Service Coverage Ratio
+        return self.factors.get('dscr', 0) > 1.5
+
+    def factor_44(self):
+        # Example: Dividend Coverage Ratio
+        return self.factors.get('dividend_coverage_ratio', 0) > 2
+
+    def factor_45(self):
+        # Example: Investment Grade Rating
+        return self.factors.get('investment_grade', False)
+
+    def factor_46(self):
+        # Example: Insider Ownership
+        return self.factors.get('insider_ownership', 0) > 5
+
+    def factor_47(self):
+        # Example: Institutional Ownership
+        return self.factors.get('institutional_ownership', 0) > 50
+
+    def factor_48(self):
+        # Example: Management Effectiveness
+        return self.factors.get('management_effectiveness', 0) > 10
+
+    def factor_49(self):
+        # Example: Revenue Per Employee
+        return self.factors.get('revenue_per_employee', 0) > 1e5
+
+    def factor_50(self):
+        # Example: ESG Score
+        return self.factors.get('esg_score', 0) > 50
+
+    def factor_51(self):
+        # Example: Altman Z-Score
+        return self.factors.get('altman_z_score', 0) > 2.99
+
+    def factor_52(self):
+        # Example: Piotroski F-Score
+        return self.factors.get('piotroski_f_score', 0) > 5
+
+    def factor_53(self):
+        # Example: Beneish M-Score
+        return self.factors.get('beneish_m_score', 0) < -1.78
+
+    def factor_54(self):
+        # Example: Sloan Ratio
+        return self.factors.get('sloan_ratio', 0) < 10
+
+    def factor_55(self):
+        # Example: M-Score
+        return self.factors.get('m_score', 0) < -2.22
+
+    def factor_56(self):
+        # Example: Ohlson O-Score
+        return self.factors.get('ohlson_o_score', 0) < 0.038
+
+    def factor_57(self):
+        # Example: Zmijewski Score
+        return self.factors.get('zmijewski_score', 0) < 0.5
+
+    def factor_58(self):
+        # Example: Cash Conversion Cycle
+        return self.factors.get('cash_conversion_cycle', 0) < 30
+
+    def factor_59(self):
+        # Example: Days Sales Outstanding
+        return self.factors.get('days_sales_outstanding', 0) < 45
+
+    def factor_60(self):
+        # Example: Days Inventory Outstanding
+        return self.factors.get('days_inventory_outstanding', 0) < 60
+
+    def factor_61(self):
+        # Example: Days Payable Outstanding
+        return self.factors.get('days_payable_outstanding', 0) > 30
+
+    def factor_62(self):
+        # Example: Cash Ratio
+        return self.factors.get('cash_ratio', 0) > 0.5
+
+    def factor_63(self):
+        # Example: Defensive Interval Ratio
+        return self.factors.get('defensive_interval_ratio', 0) > 200
+
+    def factor_64(self):
+        # Example: Market-to-Book Ratio
+        return self.factors.get('market_to_book_ratio', 0) < 3
+
+    def factor_65(self):
+        # Example: Enterprise Value
+        return self.factors.get('enterprise_value', 0) > 1e9
+
+    def factor_66(self):
+        # Example: Interest Expense
+        return self.factors.get('interest_expense', 0) < 5
+
+    def factor_67(self):
+        # Example: Preferred Dividends
+        return self.factors.get('preferred_dividends', 0) < 5
+
+    def factor_68(self):
+        # Example: Common Dividends
+        return self.factors.get('common_dividends', 0) < 5
+
+    def factor_69(self):
+        # Example: Total Revenue
+        return self.factors.get('total_revenue', 0) > 1e9
+
+    def factor_70(self):
+        # Example: Operating Income
+        return self.factors.get('operating_income', 0) > 1e8
+
+    def factor_71(self):
+        # Example: Total Expenses
+        return self.factors.get('total_expenses', 0) < 1e9
+
+    def factor_72(self):
+        # Example: Net Operating Profit After Taxes (NOPAT)
+        return self.factors.get('nopat', 0) > 1e8
+
+    def factor_73(self):
+        # Example: Effective Tax Rate
+        return self.factors.get('effective_tax_rate', 0) < 30
+
+    def factor_74(self):
+        # Example: Total Capital
+        return self.factors.get('total_capital', 0) > 1e8
+
+    def factor_75(self):
+        # Example: Economic Value Added (EVA)
+        return self.factors.get('eva', 0) > 0
+
+    def factor_76(self):
+        # Example: Levered Free Cash Flow
+        return self.factors.get('levered_free_cash_flow', 0) > 0
+
+    def factor_77(self):
+        # Example: Unlevered Free Cash Flow
+        return self.factors.get('unlevered_free_cash_flow', 0) > 0
+
+    def factor_78(self):
+        # Example: Total Shareholder Equity
+        return self.factors.get('total_shareholder_equity', 0) > 1e8
+
+    def factor_79(self):
+        # Example: Total Common Shares Outstanding
+        return self.factors.get('total_common_shares_outstanding', 0) > 1e6
+
+    def factor_80(self):
+        # Example: Total Preferred Shares Outstanding
+        return self.factors.get('total_preferred_shares_outstanding', 0) > 1e5
+
+    def factor_81(self):
+        # Example: Treasury Stock
+        return self.factors.get('treasury_stock', 0) < 1e7
+
+    def factor_82(self):
+        # Example: Goodwill
+        return self.factors.get('goodwill', 0) < 1e8
+
+    def factor_83(self):
+        # Example: Intangible Assets
+        return self.factors.get('intangible_assets', 0) < 1e8
+
+    def factor_84(self):
+        # Example: Tangible Assets
+        return self.factors.get('tangible_assets', 0) > 1e8
+
+    def factor_85(self):
+        # Example: Total Assets Turnover
+        return self.factors.get('total_assets_turnover', 0) > 1
+
+    def factor_86(self):
+        # Example: Fixed Assets Turnover
+        return self.factors.get('fixed_assets_turnover', 0) > 2
+
+    def factor_87(self):
+        # Example: Current Liabilities
+        return self.factors.get('current_liabilities', 0) < 1e8
+
+    def factor_88(self):
+        # Example: Long-Term Liabilities
+        return self.factors.get('long_term_liabilities', 0) < 1e8
+
+    def factor_89(self):
+        # Example: Short-Term Liabilities
+        return self.factors.get('short_term_liabilities', 0) < 1e7
+
+    def factor_90(self):
+        # Example: Retained Earnings
+        return self.factors.get('retained_earnings', 0) > 1e7
+
+    def factor_91(self):
+        # Example: Accumulated Depreciation
+        return self.factors.get('accumulated_depreciation', 0) < 1e7
+
+    def factor_92(self):
+        # Example: Accumulated Amortization
+        return self.factors.get('accumulated_amortization', 0) < 5e6
+
+    def factor_93(self):
+        # Example: Deferred Tax Assets
+        return self.factors.get('deferred_tax_assets', 0) < 1e6
+
+    def factor_94(self):
+        # Example: Deferred Tax Liabilities
+        return self.factors.get('deferred_tax_liabilities', 0) < 1e6
+
+    def factor_95(self):
+        # Example: Accounts Receivable
+        return self.factors.get('accounts_receivable', 0) < 1e7
+
+    def factor_96(self):
+        # Example: Accounts Payable
+        return self.factors.get('accounts_payable', 0) < 1e7
+
+    def factor_97(self):
+        # Example: Other Current Assets
+        return self.factors.get('other_current_assets', 0) < 1e6
+
+    def factor_98(self):
+        # Example: Other Current Liabilities
+        return self.factors.get('other_current_liabilities', 0) < 1e6
+
+    def factor_99(self):
+        # Example: Other Non-Current Assets
+        return self.factors.get('other_non_current_assets', 0) < 1e6
+
+    def factor_100(self):
+        # Example: Other Non-Current Liabilities
+        return self.factors.get('other_non_current_liabilities', 0) < 1e6
+
+    def evaluate_investment(self):
+        # Aggregate the results from all factors
+        results = [self.factor_1(), self.factor_2(), self.factor_3(), self.factor_4(), self.factor_5(),
+                   self.factor_6(), self.factor_7(), self.factor_8(), self.factor_9(), self.factor_10(),
+                   self.factor_11(), self.factor_12(), self.factor_13(), self.factor_14(), self.factor_15(),
+                   self.factor_16(), self.factor_17(), self.factor_18(), self.factor_19(), self.factor_20(),
+                   self.factor_21(), self.factor_22(), self.factor_23(), self.factor_24(), self.factor_25(),
+                   self.factor_26(), self.factor_27(), self.factor_28(), self.factor_29(), self.factor_30(),
+                   self.factor_31(), self.factor_32(), self.factor_33(), self.factor_34(), self.factor_35(),
+                   self.factor_36(), self.factor_37(), self.factor_38(), self.factor_39(), self.factor_40(),
+                   self.factor_41(), self.factor_42(), self.factor_43(), self.factor_44(), self.factor_45(),
+                   self.factor_46(), self.factor_47(), self.factor_48(), self.factor_49(), self.factor_50(),
+                   self.factor_51(), self.factor_52(), self.factor_53(), self.factor_54(), self.factor_55(),
+                   self.factor_56(), self.factor_57(), self.factor_58(), self.factor_59(), self.factor_60(),
+                   self.factor_61(), self.factor_62(), self.factor_63(), self.factor_64(), self.factor_65(),
+                   self.factor_66(), self.factor_67(), self.factor_68(), self.factor_69(), self.factor_70(),
+                   self.factor_71(), self.factor_72(), self.factor_73(), self.factor_74(), self.factor_75(),
+                   self.factor_76(), self.factor_77(), self.factor_78(), self.factor_79(), self.factor_80(),
+                   self.factor_81(), self.factor_82(), self.factor_83(), self.factor_84(), self.factor_85(),
+                   self.factor_86(), self.factor_87(), self.factor_88(), self.factor_89(), self.factor_90(),
+                   self.factor_91(), self.factor_92(), self.factor_93(), self.factor_94(), self.factor_95(),
+                   self.factor_96(), self.factor_97(), self.factor_98(), self.factor_99(), self.factor_100()]
+
+        # Decision rule: If at least 70% of the factors are positive, it's
